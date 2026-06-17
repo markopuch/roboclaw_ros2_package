@@ -1,0 +1,18 @@
+teleop_key:
+  ros__parameters:
+    cmd_vel_topic: "cmd_vel"
+    max_linear_velocity: 0.4
+    max_angular_velocity: 1.0
+    linear_step_size: 0.005
+    angular_step_size: 0.005
+    key_timeout: 0.1
+
+teleop_gui:
+  ros__parameters:
+    cmd_vel_topic: "cmd_vel"
+    max_linear_velocity: 0.4
+    max_angular_velocity: 1.0
+    linear_step_size: 0.05
+    angular_step_size: 0.1
+    publish_rate_hz: 20.0
+    window_title: "ROS 2 Teleop Interface"

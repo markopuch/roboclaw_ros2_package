@@ -1,0 +1,29 @@
+roboclaw_node:
+  ros__parameters:
+    port: "/dev/ttyACM0"
+    baud: 115200
+    address: 128
+    poll_rate_hz: 10.0
+    control_rate_hz: 20.0
+    max_speed: 1.0
+    ticks_per_revolution: 2048.0
+    wheel_radius: 0.05
+    base_width: 0.315
+    cmd_vel_timeout: 0.5
+    reset_encoders_on_connect: true
+
+roboclaw_odometry:
+  ros__parameters:
+    odom_topic: "odom"
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    publish_tf: true
+    publish_rate_hz: 30.0
+    ticks_per_revolution: 2048.0
+    wheel_radius: 0.05
+    base_width: 0.315
+    max_encoder_jump_counts: 10000
+    left_encoder_topics:
+      - "roboclaw/encoder/m1"
+    right_encoder_topics:
+      - "roboclaw/encoder/m2"
