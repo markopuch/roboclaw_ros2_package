@@ -1,0 +1,56 @@
+# RoboClaw y teleoperation: paquetes ROS 2 de Python.
+# Salidas de compilacion e instalacion de ROS 2 / colcon
+build/
+install/
+log/
+.colcon/
+.ros/
+
+# Python: bytecode, distribuciones y metadatos generados
+__pycache__/
+*.py[cod]
+*$py.class
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Entornos virtuales y configuracion local
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Caches y resultados de pruebas / cobertura
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+junit.xml
+
+# Configuracion y bases de datos locales de los editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs y archivos temporales del sistema
+*.log
+*.tmp
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
