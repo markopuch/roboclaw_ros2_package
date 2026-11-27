@@ -174,7 +174,7 @@ https://github.com/basicmicro/basicmicro_python
 
 ```bash
 cd ~/tesis_ws
-source /opt/ros/humble/setup.bash
+source /opt/ros/$ROS_DISTRO/setup.bash
 colcon build --packages-select roboclaw_ros2
 source install/setup.bash
 ```
