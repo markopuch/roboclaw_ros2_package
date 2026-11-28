@@ -8,12 +8,25 @@ Este paquete resuelve tres tareas principales:
 2. Leer y publicar la telemetria del RoboClaw.
 3. Estimar la odometria de la base a partir de los encoders.
 
-## Dependencia externa
+## Dependencias
 
-La comunicacion serial con el RoboClaw se hace con la libreria `basicmicro`.
+Las dependencias declaradas en `package.xml` (rclpy, mensajes, tf2_ros_py, numpy, scipy,
+tkinter) se instalan con rosdep desde la raiz del workspace:
 
 ```bash
-pip3 install basicmicro
+rosdep install --from-paths src --ignore-src -y
+```
+
+## Dependencia externa
+
+La comunicacion serial con el RoboClaw se hace con la libreria `basicmicro`. Solo existe en
+PyPI, asi que rosdep no la instala: hay que instalarla aparte con pip. En Ubuntu 24.04 pip
+exige `--break-system-packages`; con `--user` se instala solo en `~/.local` y no modifica
+los paquetes del sistema.
+
+```bash
+sudo apt install python3-pip
+python3 -m pip install --user --break-system-packages basicmicro==2.0.10
 ```
 
 Repositorio:
